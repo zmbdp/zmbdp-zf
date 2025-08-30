@@ -1,0 +1,21 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "vueIndentScriptAndStyle": true,
+  "printWidth": 70,
+  "semi": true,
+  "jsxSingleQuote": false,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "insertPragma": false,
+  "useTabs": false,
+  "endOfLine": "auto",
+  "htmlWhitespaceSensitivity": "ignore",
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ]
+}
