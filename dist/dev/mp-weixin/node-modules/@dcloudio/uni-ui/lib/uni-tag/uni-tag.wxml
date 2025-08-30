@@ -1,0 +1,1 @@
+<text wx:if="{{a}}" class="{{['uni-tag', 'data-v-980bad10', c]}}" style="{{d}}" bindtap="{{e}}">{{b}}</text>
