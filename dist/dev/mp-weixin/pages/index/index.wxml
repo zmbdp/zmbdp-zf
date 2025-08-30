@@ -1,0 +1,1 @@
+<view class="index"><text>Hello UniApp</text><button bindtap="{{a}}">点击关闭</button></view>
