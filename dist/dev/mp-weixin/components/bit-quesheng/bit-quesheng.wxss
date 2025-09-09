@@ -1,0 +1,13 @@
+.bit-quesheng {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 588rpx;
+  height: 588rpx;
+  margin: 0 auto;
+}
+.bit-quesheng .text {
+  font-size: 26rpx;
+  color: #999;
+}

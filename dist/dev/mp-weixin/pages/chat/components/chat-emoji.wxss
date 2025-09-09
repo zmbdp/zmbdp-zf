@@ -1,0 +1,25 @@
+.emoji {
+  height: 490rpx;
+}
+.emoji .title {
+  padding-top: 30rpx;
+  font-size: 26rpx;
+  color: #222;
+}
+.emoji .list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15rpx 0;
+}
+.emoji .list .item {
+  width: 14.28%;
+  font-size: 60rpx;
+}
+.emoji .list .item:nth-child(n+8) {
+  margin-bottom: 10rpx;
+}
+.emoji .del {
+  position: fixed;
+  right: 60rpx;
+  bottom: 60rpx;
+}

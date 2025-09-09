@@ -1,0 +1,100 @@
+.now {
+  box-sizing: border-box;
+  position: fixed;
+  top: 176rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 148rpx;
+  padding: 0 30rpx;
+  border-bottom: 10rpx solid #f5f5f5;
+  background: #fff;
+}
+.now .position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.now .position .left .icon-weizhi {
+  position: relative;
+  top: 6rpx;
+}
+.now .position .left .cityName {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #222;
+}
+.now .position .right {
+  font-size: 26rpx;
+  color: #0fa1fe;
+}
+.title {
+  font-size: 26rpx;
+  color: #666;
+}
+.city-select {
+  box-sizing: border-box;
+  position: fixed;
+  top: 324rpx;
+  bottom: calc(constant(safe-area-inset-bottom) + 0rpx);
+  bottom: calc(env(safe-area-inset-bottom) + 0rpx);
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  background: #fff;
+}
+.city-select .hot-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 38rpx;
+}
+.city-select .hot-list .hot-item {
+  width: 192rpx;
+  height: 74rpx;
+  margin: 10rpx 20rpx 10rpx 0;
+  line-height: 74rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  font-size: 26rpx;
+  color: #222;
+  background: #f5f5f5;
+}
+.city-select .hot-list .hot-item:nth-child(3n) {
+  margin-right: 0;
+}
+.city-select .hot-list .hot-item.active {
+  color: #0fa1fe;
+  background: rgba(15, 161, 254, 0.2);
+}
+.city-select .list-group .title,
+.city-select .list-group .group-item {
+  height: 79rpx;
+  line-height: 79rpx;
+}
+.city-select .list-group .group-item {
+  padding: 0 38rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+  font-size: 28rpx;
+  color: #222;
+}
+.letter-list {
+  position: fixed;
+  right: 30rpx;
+  top: 462rpx;
+}
+.letter-list .letter-item {
+  margin-bottom: 20rpx;
+  font-size: 22rpx;
+  color: #222;
+}
+.letter-list .letter-item:last-child {
+  margin-bottom: 0;
+}
+.letter-list .letter-item.active {
+  font-weight: 600;
+  color: #0fa1fe;
+}

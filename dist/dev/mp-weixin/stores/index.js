@@ -1,5 +1,7 @@
 "use strict";
 const common_vendor = require("../common/vendor.js");
+require("../utils/request.js");
+require("../utils/websocket.js");
 const pinia = common_vendor.createPinia();
 pinia.use(
   common_vendor.createPersistedState({

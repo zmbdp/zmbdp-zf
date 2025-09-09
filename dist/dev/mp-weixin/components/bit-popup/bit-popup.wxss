@@ -1,0 +1,40 @@
+.bit-popup {
+  position: fixed;
+  top: 264rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bit-popup .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.bit-popup .container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 820rpx;
+  min-height: 240rpx;
+  padding: 0 34rpx;
+  background: #fff;
+  border-radius: 0 0 30rpx 30rpx;
+}
+.bit-popup .container .main {
+  max-height: 700rpx;
+  min-height: 240rpx;
+}
+.bit-popup .container .btn-confirm {
+  position: absolute;
+  bottom: 30rpx;
+  width: 682rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 16rpx;
+  background: linear-gradient(to right, #22cfff, #0fa1fe);
+}

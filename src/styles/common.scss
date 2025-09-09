@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.filter-grid-item {
+  width: 214rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  margin-bottom: 20rpx;
+  background-color: $bg-color-shallow;
+  font-size: $font-size-sm-26;
+  color: $font-color-dark;
+  border-radius: 16rpx;
+  text-align: center;
+  &.active {
+    background-color: rgba(15, 161, 254, 0.1);
+    color: $font-color-active;
+  }
+  &:nth-child(3n - 1) {
+    margin: 0 20rpx;
+  }
+}
+
+// 去掉 scroll-view 滚动条
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}

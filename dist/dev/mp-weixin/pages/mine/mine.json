@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "bit-icon": "../../components/bit-icon/bit-icon"
+  }
+}

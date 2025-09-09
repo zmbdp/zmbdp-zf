@@ -1,0 +1,25 @@
+@import './variables.scss';
+// 单行或多行文本显示省略号
+@mixin text-ellipsis($line: 1) {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $line == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+}
+
+// iPhone 底部安全距离
+@mixin bottom-safe__distance($size: 0) {
+  bottom: calc(constant(safe-area-inset-bottom) + #{$size}rpx);
+  bottom: calc(env(safe-area-inset-bottom) + #{$size}rpx);
+}
+
+// 1rpx 边框
+@mixin border-1rpx($dir: bottom) {
+  border-#{$dir}: 1rpx solid $border-color;
+}

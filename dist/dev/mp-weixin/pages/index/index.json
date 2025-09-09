@@ -1,4 +1,13 @@
 {
-  "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "usingComponents": {
+    "bit-icon": "../../components/bit-icon/bit-icon",
+    "bit-nav-bar": "../../components/bit-nav-bar/bit-nav-bar",
+    "bit-house-item": "../../components/bit-house-item/bit-house-item",
+    "bit-quesheng": "../../components/bit-quesheng/bit-quesheng",
+    "bit-filter-by-region": "../../components/bit-filter-by-region/bit-filter-by-region",
+    "bit-filter-by-price": "../../components/bit-filter-by-price/bit-filter-by-price",
+    "bit-filter-by-house-type": "../../components/bit-filter-by-houseType/bit-filter-by-houseType",
+    "bit-filter-by-sort": "../../components/bit-filter-by-sort/bit-filter-by-sort",
+    "bit-popup": "../../components/bit-popup/bit-popup"
+  }
 }

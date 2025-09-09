@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bit-nav-bar": "../../components/bit-nav-bar/bit-nav-bar",
+    "bit-quesheng": "../../components/bit-quesheng/bit-quesheng",
+    "session-item": "./components/session-item"
+  }
+}
