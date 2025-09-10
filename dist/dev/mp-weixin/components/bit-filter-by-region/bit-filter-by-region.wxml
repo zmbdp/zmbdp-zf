@@ -1,0 +1,1 @@
+<view class="bit-filter-by-region"><view wx:for="{{a}}" wx:for-item="item" wx:key="f" class="region-item" bindtap="{{item.g}}"><text class="{{['region-item__text', item.b && 'active']}}">{{item.a}}</text><bit-icon wx:if="{{item.c}}" u-i="{{item.d}}" bind:__l="__l" u-p="{{item.e}}"/></view></view>

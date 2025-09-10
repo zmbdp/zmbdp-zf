@@ -1,0 +1,67 @@
+.bit-house-item {
+  display: flex;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.bit-house-item .headImage {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 16rpx;
+  margin-right: 20rpx;
+}
+.bit-house-item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.bit-house-item .info .title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+  color: #222;
+  font-weight: 600;
+}
+.bit-house-item .info .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rpx;
+}
+.bit-house-item .info .main .desc {
+  display: flex;
+  align-items: center;
+}
+.bit-house-item .info .main .desc .area,
+.bit-house-item .info .main .desc .position,
+.bit-house-item .info .main .desc .regionName {
+  font-size: 24rpx;
+  color: #666;
+}
+.bit-house-item .info .main .desc .verticalLine {
+  width: 1rpx;
+  height: 16rpx;
+  margin: 0 19rpx;
+  background-color: #dedede;
+}
+.bit-house-item .info .main .price {
+  display: flex;
+  align-items: baseline;
+  color: #ff5c02;
+  font-weight: 600;
+}
+.bit-house-item .info .main .price .rmb {
+  font-size: 24rpx;
+}
+.bit-house-item .info .main .price .num {
+  font-size: 30rpx;
+}
+.bit-house-item .info .main .price .perMonth {
+  font-size: 26rpx;
+}

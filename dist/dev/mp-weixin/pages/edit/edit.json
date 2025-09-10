@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bit-nav-bar": "../../components/bit-nav-bar/bit-nav-bar",
+    "bit-icon": "../../components/bit-icon/bit-icon"
+  }
+}

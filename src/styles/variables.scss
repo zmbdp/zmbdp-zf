@@ -1,0 +1,55 @@
+// 定义scss变量，方便之后样式维护
+
+// 字体大小变量
+$font-size-xs-20: 20rpx;
+$font-size-xs-22: 22rpx;
+$font-size-sm-24: 24rpx;
+$font-size-sm-26: 26rpx;
+$font-size-md-28: 28rpx;
+$font-size-md-30: 30rpx;
+$font-size-lg-32: 32rpx;
+$font-size-lg-36: 36rpx;
+
+// 字体颜色变量
+$font-color-dark: #222;
+$font-color-middle: #666;
+$font-color-shallow: #999;
+$font-color-active: #0fa1fe;
+$font-color-white: #fff;
+
+// 背景颜色变量
+$bg-color-dark: #c9c9c9;
+$bg-color-middle: #dedede;
+$bg-color-shallow: #f5f5f5;
+$bg-color-active: #0fa1fe;
+$bg-color-white: #fff;
+
+// 徽章背景色变量
+$bg-badge-color: #fd5858;
+
+// 自己发消息的聊天框背景色
+$bg-color-chat-me: #d4e2fc;
+
+// 聊天消息小红点背景色
+$bg-color-red-dot: #f50102;
+
+// 边框颜色变量
+$border-color: #e9e9e9;
+
+// 价格文字颜色
+$font-color-price: #ff5c02;
+
+// 弹出层遮罩层背景色
+$bg-color-mask: rgba(0, 0, 0, 0.5);
+
+// 聊天底部弹出层背景色
+$bg-color-chat-popup: #d8d8d8;
+// 聊天底部长按框背景色
+$bg-color-chat-longpress: #f2f2f4;
+
+// 单元格高亮背景色
+$bg-color-grid-active: rgba(15, 161, 254, 0.2);
+
+// 按钮背景色
+$bg-color-from: #22cfff;
+$bg-color-to: #0fa1fe;

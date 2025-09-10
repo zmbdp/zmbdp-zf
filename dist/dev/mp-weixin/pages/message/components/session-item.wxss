@@ -1,0 +1,42 @@
+.session-item {
+  display: flex;
+  padding: 0 20rpx;
+}
+.session-item .left {
+  width: 80rpx;
+  margin-right: 24rpx;
+  padding: 30rpx 0;
+}
+.session-item .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #dedede;
+}
+.session-item .right .up {
+  display: flex;
+  justify-content: space-between;
+}
+.session-item .right .up .nickName {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #222;
+}
+.session-item .right .up .sendTime {
+  font-size: 24rpx;
+  color: #999;
+}
+.session-item .right .down {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 546rpx;
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.session-item .right .down.hasUnVisited {
+  color: #f50102;
+}

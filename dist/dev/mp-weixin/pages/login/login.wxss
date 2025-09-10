@@ -1,0 +1,75 @@
+.login .navbar .icon {
+  margin-right: 60rpx;
+}
+.login .main {
+  height: calc(100vh - 176rpx);
+  padding: 60rpx 52rpx 0;
+  background: linear-gradient(to bottom, #dff8ff, #f0fcff);
+}
+.login .main .title .level1 {
+  font-size: 42rpx;
+  font-weight: 600;
+  color: #222;
+}
+.login .main .title .level2 {
+  margin: 12rpx 0 59rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.login .main .form-item {
+  position: relative;
+}
+.login .main .form-item__input {
+  box-sizing: border-box;
+  width: 646rpx;
+  height: 110rpx;
+  padding-left: 30rpx;
+  border-radius: 24rpx;
+  background: #fff;
+}
+.login .main .form-item__input.code {
+  margin: 30rpx 0 17rpx;
+}
+.login .main .form-item .btn-code {
+  z-index: 2;
+  position: absolute;
+  right: 30rpx;
+  bottom: 37rpx;
+  font-size: 28rpx;
+  color: #0fa1fe;
+}
+.login .main .form-item.xieyi {
+  display: flex;
+}
+.login .main .form-item.xieyi .icon {
+  position: relative;
+  top: -4.5rpx;
+}
+.login .main .form-item.xieyi .text {
+  margin-left: 12rpx;
+  font-size: 24rpx;
+}
+.login .main .form-item.xieyi .text_default {
+  color: #999;
+}
+.login .main .form-item.xieyi .text_active {
+  color: #0fa1fe;
+}
+.login .main .form-item .btn {
+  width: 646rpx;
+  height: 113rpx;
+  line-height: 113rpx;
+  border-radius: 24rpx;
+  border: none;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.login .main .form-item .btn.btn-phone-login {
+  margin: 85rpx 0 30rpx;
+  background: linear-gradient(to right, #22cfff, #0fa1fe);
+  color: #fff;
+}
+.login .main .form-item .btn.btn-wx-login {
+  background: #fff;
+  color: #0fa1fe;
+}
