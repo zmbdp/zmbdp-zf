@@ -1,0 +1,15 @@
+.bit-filter-by-houseType {
+  z-index: 2;
+  position: relative;
+}
+.bit-filter-by-houseType .title {
+  margin: 30rpx 0 20rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #222;
+}
+.bit-filter-by-houseType .rent-list,
+.bit-filter-by-houseType .room-list {
+  display: flex;
+  flex-wrap: wrap;
+}

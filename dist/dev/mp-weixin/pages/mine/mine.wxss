@@ -1,0 +1,67 @@
+.mine .header {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  height: 354rpx;
+  padding: 30rpx;
+  background: linear-gradient(to right bottom, #22cfff, #0fa1fe);
+}
+.mine .header .info {
+  display: flex;
+  height: 118rpx;
+  align-items: center;
+}
+.mine .header .info .avatar {
+  width: 118rpx;
+  height: 118rpx;
+  border-radius: 50%;
+}
+.mine .header .info .text {
+  margin-left: 23rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #fff;
+}
+.mine .main {
+  padding: 20rpx 30rpx;
+  background-color: #f5f5f5;
+}
+.mine .main .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 33rpx 0 57rpx;
+  border-radius: 16rpx;
+  background: #fff;
+}
+.mine .main .text {
+  font-size: 28rpx;
+  color: #222;
+  font-weight: 600;
+}
+.mine .main .qrCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 0 30rpx;
+  padding: 266rpx 0 124rpx;
+  background: #fff;
+  border-radius: 16rpx;
+}
+.mine .main .qrCode .qrCodeImage {
+  width: 280rpx;
+  height: 280rpx;
+  margin-bottom: 22rpx;
+}
+.mine .main .btn-login {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #666;
+  background: #fff;
+  border: none;
+}

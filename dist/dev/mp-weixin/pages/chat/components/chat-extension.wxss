@@ -1,0 +1,21 @@
+.extension .list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 40rpx 0;
+}
+.extension .list .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  margin-right: 12rpx;
+  text-align: center;
+}
+.extension .list .item:nth-child(4n) {
+  margin-right: 0;
+}
+.extension .list .item .text {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #666;
+}

@@ -1,0 +1,1 @@
+<view class="bit-popup" hidden="{{!e}}"><view class="mask" bindtap="{{a}}"></view><view class="container" style="{{'padding-bottom:' + d}}"><scroll-view scroll-y class="main"><slot></slot></scroll-view><button wx:if="{{b}}" class="btn-confirm" bindtap="{{c}}"> 确定 </button></view></view>

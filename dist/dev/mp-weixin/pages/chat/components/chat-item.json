@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "bit-house-item": "../../../components/bit-house-item/bit-house-item",
+    "bit-icon": "../../../components/bit-icon/bit-icon"
+  }
+}

@@ -1,0 +1,1 @@
+<scroll-view scroll-y class="extension"><view class="list"><view wx:for="{{a}}" wx:for-item="extension" wx:key="d" class="item" bindtap="{{extension.e}}"><bit-icon wx:if="{{extension.b}}" u-i="{{extension.a}}" bind:__l="__l" u-p="{{extension.b}}"/><text class="text">{{extension.c}}</text></view></view></scroll-view>

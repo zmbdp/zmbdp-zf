@@ -1,0 +1,1 @@
+<scroll-view scroll-y class="emoji"><view class="title">全部表情</view><view class="list"><view wx:for="{{a}}" wx:for-item="emoji" wx:key="b" class="item" bindtap="{{emoji.c}}">{{emoji.a}}</view></view><view class="del"><bit-icon wx:if="{{c}}" bindclick="{{b}}" u-i="67e7cba8-0" bind:__l="__l" u-p="{{c}}"/></view></scroll-view>

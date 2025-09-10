@@ -1,7 +1,7 @@
-import { createPinia } from 'pinia';
-import { createPersistedState } from 'pinia-plugin-persistedstate';
+import { createPinia } from 'pinia'
+import { createPersistedState } from 'pinia-plugin-persistedstate'
 
-const pinia = createPinia();
+const pinia = createPinia()
 
 pinia.use(
   createPersistedState({
@@ -13,16 +13,16 @@ pinia.use(
       getItem: uni.getStorageSync
     }
   })
-);
+)
 
-export default pinia;
+export default pinia
 
 // 统一导出 store 子模块
-export * from './modules/user';
-export * from './modules/location';
-export * from './modules/filter';
-export * from './modules/chat';
-export * from './modules/session';
+export * from './modules/user'
+export * from './modules/location'
+export * from './modules/filter'
+export * from './modules/chat'
+export * from './modules/session'
 
 // 等同于下面两行代码的意思
 

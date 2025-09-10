@@ -1,22 +1,70 @@
 {
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
-		}
-	},
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "^bit-(.*)": "@/components/bit-$1/bit-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/index/index"
+    },
+    {
+      "path": "pages/message/message"
+    },
+    {
+      "path": "pages/mine/mine"
+    },
+    {
+      "path": "pages/login/login"
+    },
+    {
+      "path": "pages/edit/edit"
+    },
+    {
+      "path": "pages/city-select/city-select"
+    },
+    {
+      "path": "pages/detail/detail"
+    },
+    {
+      "path": "pages/chat/chat"
+    },
+    {
+      "path": "pages/list/list"
+    }
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0FA1FE",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "height": "54px",
+    "fontSize": "10px",
+    "iconWidth": "22px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabbar/index-default.png",
+        "selectedIconPath": "static/images/tabbar/index-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "static/images/tabbar/message-default.png",
+        "selectedIconPath": "static/images/tabbar/message-selected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/images/tabbar/mine-default.png",
+        "selectedIconPath": "static/images/tabbar/mine-selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationStyle": "custom"
+  }
 }

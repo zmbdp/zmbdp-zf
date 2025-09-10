@@ -1,0 +1,38 @@
+.bit-nav-bar {
+  display: flex;
+  align-items: flex-end;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 176rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.bit-nav-bar .main {
+  display: flex;
+  align-items: center;
+  width: 750rpx;
+  height: 88rpx;
+  padding: 0 30rpx;
+}
+.bit-nav-bar .main .left,
+.bit-nav-bar .main .middle,
+.bit-nav-bar .main .right {
+  flex: 1;
+}
+.bit-nav-bar .main .left {
+  display: flex;
+  align-items: center;
+}
+.bit-nav-bar .main .middle {
+  font-size: 32rpx;
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+}
+.bit-blank-space {
+  z-index: 0;
+  position: relative;
+  height: 176rpx;
+}

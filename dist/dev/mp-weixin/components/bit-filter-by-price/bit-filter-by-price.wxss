@@ -1,0 +1,5 @@
+.bit-filter-by-price {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+}
