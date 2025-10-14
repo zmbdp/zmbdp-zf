@@ -76,7 +76,7 @@ const _sfc_main = {
         // 标题
         path: "/pages/detail/detail?houseId=" + houseId,
         // 房源详情页的路由路径并带上houseId
-        imageUrl: constants_common.OSS_BASE_URL + headImage
+        imageUrl: headImage.startsWith("http") ? headImage : constants_common.OSS_BASE_URL + headImage
         // 房屋的图片
       };
     });
@@ -101,7 +101,7 @@ const _sfc_main = {
         id: houseDetail.value.userId
       });
       chatStore.setHouse({
-        headImage: constants_common.OSS_BASE_URL + headImage,
+        headImage: headImage.startsWith("http") ? headImage : constants_common.OSS_BASE_URL + headImage,
         title,
         area,
         position: constants_house.positionMap[position],
@@ -129,7 +129,7 @@ const _sfc_main = {
       }, houseDetail.value.houseId ? {
         c: common_vendor.f(houseDetail.value.images, (url, index, i0) => {
           return {
-            a: common_vendor.unref(constants_common.OSS_BASE_URL) + url,
+            a: url.startsWith("http") ? url : common_vendor.unref(constants_common.OSS_BASE_URL) + url,
             b: index
           };
         }),
