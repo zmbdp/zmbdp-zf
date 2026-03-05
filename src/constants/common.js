@@ -55,8 +55,11 @@ export const authName = {
 /**
  * websocket服务器地址
  */
-export const WS_URL = 'ws://111.231.13.141:10030/chat/websocket'
+// 线上环境
+// export const WS_URL = 'ws://云服务器外网ip:81/chat/websocket'
 
+// 开发环境
+export const WS_URL = 'ws://127.0.0.1:10030/chat/websocket'
 /**
  * 主流手机的操作系统
  */
