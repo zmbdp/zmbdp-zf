@@ -186,7 +186,11 @@ const _sfc_main = {
       // 每页条数
     };
     const handleFilterParams = () => {
-      const { id: cityId, longitude, latitude } = locationStore.location;
+      const {
+        id: cityId,
+        longitude,
+        latitude
+      } = locationStore.location;
       const regionId = selectedRegion.value.id === -1 ? null : selectedRegion.value.id;
       const rentalRanges = selectedRentRangeList.value.length ? selectedRentRangeList.value.map((item) => item.key) : null;
       const rentTypes = selectedRentTypeList.value.length ? selectedRentTypeList.value.map((item) => item.key) : null;
@@ -221,7 +225,7 @@ const _sfc_main = {
         ...houseList.value,
         ...resp.list.map((item) => ({
           ...item,
-          headImage: constants_common.OSS_BASE_URL + item.headImage
+          headImage: item.headImage ? item.headImage.startsWith("http") ? item.headImage : constants_common.OSS_BASE_URL + item.headImage : ""
         }))
       ];
     };

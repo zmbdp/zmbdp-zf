@@ -1,34 +1,34 @@
 <script setup>
-  import { getHouseDetailApi } from '@/api/house'
-  import { onLoad, onShareAppMessage } from '@dcloudio/uni-app'
-  import { computed, ref } from 'vue'
-  import { OSS_BASE_URL } from '@/constants/common'
-  import { positionMap, tagMap } from '@/constants/house'
-  import { showNoneIconToast } from '@/utils/toast'
-  import { useUserStore, useChatStore } from '@/stores'
+  import { getHouseDetailApi } from '@/api/house';
+  import { onLoad, onShareAppMessage } from '@dcloudio/uni-app';
+  import { computed, ref } from 'vue';
+  import { OSS_BASE_URL } from '@/constants/common';
+  import { positionMap, tagMap } from '@/constants/house';
+  import { showNoneIconToast } from '@/utils/toast';
+  import { useUserStore, useChatStore } from '@/stores';
 
-  const userStore = useUserStore()
-  const chatStore = useChatStore()
+  const userStore = useUserStore();
+  const chatStore = useChatStore();
 
   // 页面生命周期钩子，在页面加载的时候会自动执行
   // query 拿到就是携带过来的路由问号参数
   onLoad((query) => {
-    getHouseDetail(query.houseId)
-  })
+    getHouseDetail(query.houseId);
+  });
 
   // 存储房源对象
-  const houseDetail = ref({})
+  const houseDetail = ref({});
 
   // 获取房源详情
   const getHouseDetail = async (houseId) => {
     try {
-      houseDetail.value = await getHouseDetailApi(houseId)
+      houseDetail.value = await getHouseDetailApi(houseId);
       houseDetail.value.intro = houseDetail.value.intro.replaceAll(
         '<br>',
         ''
-      )
+      );
     } catch (e) {}
-  }
+  };
 
   // 计算得到地图定位的 markers 数组
   const covers = computed(() => {
@@ -43,42 +43,44 @@
             height: uni.upx2px(48)
           }
         ]
-      : []
-  })
+      : [];
+  });
 
   // 记录swiper滑动的下标
-  const currentIndex = ref(0)
+  const currentIndex = ref(0);
   // swiper下标改变时
   const onSwiperChange = (e) => {
-    currentIndex.value = e.detail.current
-  }
+    currentIndex.value = e.detail.current;
+  };
 
   // 点击map组件打开地图
   const openLocation = () => {
-    if (!houseDetail.value.houseId) return
-    const { longitude, latitude, communityName } = houseDetail.value
+    if (!houseDetail.value.houseId) return;
+    const { longitude, latitude, communityName } = houseDetail.value;
     uni.openLocation({
       longitude,
       latitude,
       name: communityName,
       success: () => {},
       fail: (e) => {
-        showNoneIconToast(e.errMsg)
+        showNoneIconToast(e.errMsg);
       }
-    })
-  }
+    });
+  };
 
   // 自定义的分享函数
   onShareAppMessage(() => {
-    if (!houseDetail.value.houseId) return
-    const { houseId, title, headImage } = houseDetail.value
+    if (!houseDetail.value.houseId) return;
+    const { houseId, title, headImage } = houseDetail.value;
     // 返回自定义的房源卡片内容
     return {
       title, // 标题
       path: '/pages/detail/detail?houseId=' + houseId, // 房源详情页的路由路径并带上houseId
-      imageUrl: OSS_BASE_URL + headImage // 房屋的图片
-    }
-  })
+      imageUrl: headImage.startsWith('http')
+        ? headImage
+        : OSS_BASE_URL + headImage // 房屋的图片
+    };
+  });
 
   // 点击在线咨询按钮
   const onConsult = () => {
@@ -86,8 +88,8 @@
     if (userStore.token) {
       // 禁止与自己聊天
       if (houseDetail.value.userId === userStore.userInfo.userId) {
-        showNoneIconToast('不能与自己聊天')
-        return
+        showNoneIconToast('不能与自己聊天');
+        return;
       }
     }
 
@@ -101,15 +103,17 @@
       price,
       userId,
       houseId
-    } = houseDetail.value
+    } = houseDetail.value;
 
     // 保存房东id
     chatStore.setFangDong({
       id: houseDetail.value.userId
-    })
+    });
     // 保存房源信息
     chatStore.setHouse({
-      headImage: OSS_BASE_URL + headImage,
+      headImage: headImage.startsWith('http')
+        ? headImage
+        : OSS_BASE_URL + headImage,
       title,
       area,
       position: positionMap[position],
@@ -117,21 +121,21 @@
       price,
       userId,
       houseId
-    })
+    });
 
     // 登录了
     if (userStore.token) {
       // 跳转至聊天页
       uni.navigateTo({
         url: '/pages/chat/chat'
-      })
+      });
     } else {
       // 未登录，跳转至登录页，并且携带聊天页的路由路径
       uni.navigateTo({
         url: '/pages/login/login?redirectUrl=pages/chat/chat'
-      })
+      });
     }
-  }
+  };
 </script>
 
 <template>
@@ -153,7 +157,7 @@
           :key="index"
         >
           <image
-            :src="OSS_BASE_URL + url"
+            :src="url.startsWith('http') ? url : OSS_BASE_URL + url"
             mode="scaleToFill"
             class="swiper-image"
           />

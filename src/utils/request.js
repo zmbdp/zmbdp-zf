@@ -3,7 +3,11 @@
 import { useUserStore } from '@/stores'
 import { showNoneIconToast } from './toast'
 
-const BASE_URL = 'http://111.231.13.141:10030'
+// 线上环境
+// const BASE_URL = 'http://云服务器外网ip:80'
+
+// 开发环境
+const BASE_URL = 'http://127.0.0.1:10030'
 // 添加请求拦截器
 const requestInterceptor = {
   // 请求拦截器，任何请求在请求发出去之后，到达服务器之前，必须经过 invoke 函数的处理

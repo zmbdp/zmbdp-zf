@@ -67,8 +67,8 @@
           mode="scaleToFill"
           show-menu-by-longpress
         />
-        <text class="text">扫二维码</text>
-        <text class="text">关注"稚能安居"公众号</text>
+        <text class="text">发布更多房源信息</text>
+        <text class="text">请关注"稚能安居"公众号</text>
       </view>
       <!-- 退出按钮 -->
       <button
