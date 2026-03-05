@@ -8,7 +8,7 @@
     "lazyloadPlaceholderEnable": false,
     "skylineRenderEnable": false,
     "preloadBackgroundData": false,
-    "autoAudits": false,
+    "autoAudits": true,
     "useApiHook": true,
     "useApiHostProcess": true,
     "showShadowRootInWxmlPanel": false,

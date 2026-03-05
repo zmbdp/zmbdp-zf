@@ -38,7 +38,7 @@ const videoExtName = [
 const authName = {
   record: "record"
 };
-const WS_URL = "ws://111.231.13.141:10030/chat/websocket";
+const WS_URL = "ws://127.0.0.1:10030/chat/websocket";
 const os = {
   ios: "ios",
   android: "android",

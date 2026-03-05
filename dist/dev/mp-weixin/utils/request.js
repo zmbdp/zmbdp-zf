@@ -3,7 +3,7 @@ const common_vendor = require("../common/vendor.js");
 require("../stores/index.js");
 const utils_toast = require("./toast.js");
 const stores_modules_user = require("../stores/modules/user.js");
-const BASE_URL = "http://111.231.13.141:10030";
+const BASE_URL = "http://127.0.0.1:10030";
 const requestInterceptor = {
   // 请求拦截器，任何请求在请求发出去之后，到达服务器之前，必须经过 invoke 函数的处理
   // 因此可以再 invoke 函数中对请求做统一处理，比如在添加基地址，请求头中统一携带token
