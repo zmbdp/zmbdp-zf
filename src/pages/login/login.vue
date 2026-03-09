@@ -232,7 +232,7 @@
               method: 'GET',
               url: 'https://api.weixin.qq.com/sns/jscode2session',
               data: {
-                appid: 'wx16b05799dcd4b403',
+                appid: '你的小程序appid',
                 secret: 'da4a97229fd2a97b8c030a0da7ae6cc3',
                 js_code: res.code,
                 grant_type: 'authorization_code'
